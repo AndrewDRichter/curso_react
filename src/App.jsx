@@ -1,16 +1,12 @@
+import AddTask from "./components/AddTask";
+import Tasks from "./components/Tasks";
+
 function App() {
-  // State
-  let message = "Olá mundo";
   return (
     <div>
-      <h1>{message}</h1>
-      <button
-        onClick={() => {
-          message = "mensagem";
-        }}
-      >
-        Change message
-      </button>
+      <h1>Gerenciador de Tarefas</h1>
+      <AddTask />
+      <Tasks />
     </div>
   );
 }
